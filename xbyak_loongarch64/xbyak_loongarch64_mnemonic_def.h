@@ -79,6 +79,11 @@ void vpickev_h(const VReg &vd, const VReg &vj, const VReg &vk);
 void vpickev_w(const VReg &vd, const VReg &vj, const VReg &vk);
 void vpickev_d(const VReg &vd, const VReg &vj, const VReg &vk);
 
+void vpickod_b(const VReg &vd, const VReg &vj, const VReg &vk);
+void vpickod_h(const VReg &vd, const VReg &vj, const VReg &vk);
+void vpickod_w(const VReg &vd, const VReg &vj, const VReg &vk);
+void vpickod_d(const VReg &vd, const VReg &vj, const VReg &vk);
+
 void vand_v(const VReg &vd, const VReg &vj, const VReg &vk);
 void vor_v(const VReg &vd, const VReg &vj, const VReg &vk);
 void vxor_v(const VReg &vd, const VReg &vj, const VReg &vk);

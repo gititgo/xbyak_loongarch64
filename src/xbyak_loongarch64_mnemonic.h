@@ -1069,6 +1069,11 @@ void CodeGenerator::vpickev_h(const VReg &vd, const VReg &vj, const VReg &vk) { 
 void CodeGenerator::vpickev_w(const VReg &vd, const VReg &vj, const VReg &vk) { LasxFormat3R(0b011100010001111, TYPE_W, vk, vj, vd); }
 void CodeGenerator::vpickev_d(const VReg &vd, const VReg &vj, const VReg &vk) { LasxFormat3R(0b011100010001111, TYPE_D, vk, vj, vd); }
 
+void CodeGenerator::vpickod_b(const VReg &vd, const VReg &vj, const VReg &vk) { LasxFormat3R(0b011100010010000, TYPE_B, vk, vj, vd); }
+void CodeGenerator::vpickod_h(const VReg &vd, const VReg &vj, const VReg &vk) { LasxFormat3R(0b011100010010000, TYPE_H, vk, vj, vd); }
+void CodeGenerator::vpickod_w(const VReg &vd, const VReg &vj, const VReg &vk) { LasxFormat3R(0b011100010010000, TYPE_W, vk, vj, vd); }
+void CodeGenerator::vpickod_d(const VReg &vd, const VReg &vj, const VReg &vk) { LasxFormat3R(0b011100010010000, TYPE_D, vk, vj, vd); }
+
 void CodeGenerator::vand_v(const VReg &vd, const VReg &vj, const VReg &vk) { LasxFormat3R(0b011100010010011, 0b00, vk, vj, vd); }
 void CodeGenerator::vor_v(const VReg &vd, const VReg &vj, const VReg &vk) { LasxFormat3R(0b011100010010011, 0b01, vk, vj, vd); }
 void CodeGenerator::vxor_v(const VReg &vd, const VReg &vj, const VReg &vk) { LasxFormat3R(0b011100010010011, 0b10, vk, vj, vd); }

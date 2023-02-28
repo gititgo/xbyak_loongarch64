@@ -898,8 +898,8 @@ public:
 "xvfmaxa.d",
 "xvfmina.s",
 "xvfmina.d",
-"xvfscaleb.s",
-"xvfscaleb.d",
+// "xvfscaleb.s", // new asm Not support
+// "xvfscaleb.d",
 "xvfcvt.h.s",
 "xvfcvt.s.d",
 "xvffint.s.l",
@@ -1269,6 +1269,10 @@ public:
 "vpickev.h",
 "vpickev.w",
 "vpickev.d",
+"vpickod.b",
+"vpickod.h",
+"vpickod.w",
+"vpickod.d",
 "vmax.bu",
 "vmax.hu",
 "vmax.wu",
@@ -1591,7 +1595,7 @@ public:
 
 /*****************************************************************/
 
-  PUT1( DataProc_1R_2I, NM("xvmepatmsk.v"), OPS(XVREG, IMM5BIT, IMM5BIT) );
+  PUT1( DataProc_1R_2I, NM(/* "xvmepatmsk.v" */), OPS(XVREG, IMM5BIT, IMM5BIT) ); // new asm Not support
 
 /*****************************************************************/
   void put() {
